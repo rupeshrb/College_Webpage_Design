@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery | Ajeenkya DY Patil</title>
+        <link rel="icon" href="images/clg.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="overlay">
+        <div class="loading-container1">
+          <div class="loading-spinner1"></div>
+          <p>Loading...</p>
+        </div>
+      </div>
+        <section class="sub-header sub-header-image-3 blur-content">
+            <nav>
+                <a href="index.html"><img src="images/clg.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT ACE</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html" onclick="openContactWindow(); return false;">CONTACT</a></li>
+                    </ul>
+                      <script src="script.js"></script>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>G A L L E R Y</h1>
+            <div class="img-folder">
+                <div class="img-container" id="folder1" onclick="showImages('folder1')">
+                    <a href="Freshers22.html"><img src="images/folder1.png" alt="Freshers'22"></a>
+                    <h2>Freshers'22</h2>
+                </div>
+                <div class="img-container" id="folder2" onclick="showImages('folder2')">
+                    <a href="Onset22.html"><img src="images/folder1.png" alt="Onset'22"></a>
+                    <h2>Onset'22</h2>
+                </div>
+                <div class="img-container" id="folder3" onclick="showImages('folder3')">
+                    <a href="TechJung22.html"><img src="images/folder1.png" alt="TechJung'22"></a>
+                    <h2>TechJung'22</h2>
+                </div>
+                <div class="img-container" id="folder4" onclick="showImages('folder4')">
+                    <a href="Technicalclub.html"><img src="images/folder1.png" alt="Technical'club"></a>
+                    <h2>Technical'club</h2>
+                </div>
+            </div>
+        </section>
+       <script> window.addEventListener('load', function() {
+        setTimeout(function() {
+          document.querySelector('.overlay').style.display = 'none';
+          document.querySelector('.blur-content').style.filter = 'none';
+        }, 1000); // 3 seconds
+      });
+      </script>
+    </body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About ACE | Ajeenkya DY Patil</title>
+        <link rel="icon" href="images/clg.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="overlay">
+            <div class="loading-container1">
+              <div class="loading-spinner1"></div>
+              <p>Loading...</p>
+            </div>
+          </div>
+        <section class="sub-header sub-header-image-1 blur-content">
+            <nav>
+                <a href="index.html"><img src="images/clg.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT ACE</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html" onclick="openContactWindow(); return false;">CONTACT</a></li>
+                    </ul>
+                      <script src="script.js"></script>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+            <section>
+                <div class="row">
+                    
+                    <div class="about-col1">
+                        <h2>Vision</h2>
+                        <ul class="brcr">
+                        <li><b>To inspire and create memorable college events.</b></li>
+                        </ul></br></br>
+                        <h2>Mission</h2>
+                        <ul class="brcr">
+                             <li><b>Create engaging events for students.</b></li>
+                            <li><b>Promote creativity and teamwork.</b></li>
+                            <li><b>Foster a sense of community.</b></li>
+                            <li><b>Provide diverse experiences.</b></li>
+                        </ul>
+                    </div>
+                    <div class="about-col1">
+                        <h2>Objectives of Departmental Association</h2>
+                        <ul class="brcr">
+                        <li><b>To enhance subject knowledge, encourage collaboration, and organize academic activities.</b></li>
+                       </ul>
+                    </br>
+                       <h2>Activities Conducted under ACE</h2>
+                        <ul class="brcr">
+                            <li><b>Workshops and seminars.</b></li>
+                            <li><b>Cultural and talent shows.</b></li>
+                            <li><b>Guest lectures and panel discussions.</b></li>
+                            <li><b>Community service initiatives.</b></li>
+                            <li><b>Social and awareness campaigns.</b></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
+            <div class="fix">
+                <a class="hero-btn"  id="payButton" style="margin-left:10px;"> PAY ACE FEE</a>
+            </div>
+            <section class="scrolling-notice">
+                <div class="scrolling-content">
+                    <marquee behavior="scroll" direction="left">
+                        <span class="notice">ACE FEE 500.Rs (You can pay from Above Button also)</span>
+                        <span class="notice">Upcoming Events –  Due to holiday, Onset’23 is rescheduled on 22nd of August. </span>
+                        <a href="https://drive.google.com/file/d/1UKsZwmnCYqcBD7sHblx5gHLyDADWdUqP/view">New Notice    </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6zDHdiX391fXbru3FtLMKmhfUKDC8ipZoNPgnO8NPbIfBrQ/viewform?usp=send_form" style="margin-left: 20px;">FEEDBACK LINK FOR ACE</a>
+                    </marquee>
+                </div>
+                
+            </section>
+           
+        </div>
+        <svg class="arrows">
+            <path stroke-linecap="round" class="a1" d="M0 0 L15 15 L30 0"></path>
+            <path stroke-linecap="round" class="a2" d="M0 10 L15 25 L30 10"></path>
+            <path stroke-linecap="round" class="a3" d="M0 20 L15 35 L30 20"></path>
+        </svg>  
+            <div class="payment-table" id="paymentTable">
+                <div class="close-btn" id="closePaymentTable">&#10006;</div>
+                <table>
+                    <tr>
+                        <td class="label">Name:</td>
+                        <td><input type="text" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Roll No:</td>
+                        <td><input type="text" id="rollNo"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Div:</td>
+                        <td><input type="text" id="div"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Branch:</td>
+                        <td><input type="text" id="branch"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Amount:</td>
+                        <td><input type="text" id="amount" value="500" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <center><button class="payment-btn" id="confirmPayment">Confirm Payment</button></center>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+        </section>
+        <section class="arrange">
+            <div class="row">
+                
+                <div class="about-col">
+                 
+                    <h2>Faculty Committee</h2>
+                    <ul class="bullet">
+                        <li><b>[ Ace Coordinator ]</b></li>
+                        <li> <b>Prof. </b>Pallavi M. Shimpi</li>
+                        <li><b>Prof. </b>Swati Bagade (Member)</li>
+                        <li><b>Prof. </b>Ishwar Bharambe (Member)</li>
+                        <li><b>Prof. </b>Suvidha Shaha (Member)</li>
+                    </ul>
+                </div>
+                <div class="about-col">
+                    <h2>Student Committee for A.Y 2022-23</h2>
+                   <ul class="bullet">
+                    <li class="text-info1"><b>[ President ]</b> Mr. Bhargav Balinge 
+                       <br><b>[ Vice-President ]</b> Ms. Saloni Mahadik , Mr. Advait Pandarpurkar
+                       <br><b>[ Treasurer ]</b> Mr. Vrushank Bhosale , Ms. Lakshita Mittal
+                        <br> <b>[ Cultural Coordinator ]</b>  Mr. Stuti Tiwari , Mr. Ali Nathani
+                        <br><b>[Sports Secretory] </b> Ms. Sayunkta Waghmare , Mr. Ayamaan Khan 
+                    </li>  
+                    <li class="text-info1">
+                       <b>[Technical Secretory]</b> Ms. Shweta Amale , Mr. Yash Petkar 
+                    <br><b>[Discipline Committee Coordinator]</b> Mr. Devang Mathoor , Mr. Aditya Bobade 
+                    <br><b>[Publicity Committee Coordinator]</b>  Mr. Harsh Naikwad , Ms. Simaran Shah
+                    <br><b>[Photography and Videography Coordinator]</b> Mr. Jadhav Tanishq , Ms. Vaishnavi Kadam
+                    <br><b>[Communication and Media]</b> Ms. Astha Raghuwanshi
+                
+                    </li>  
+                   </ul>
+                 </div>
+            </div>
+        </section>
+
+<!-- --------About us content-------- -->
+
+
+
+<!-- -------------JavaScript for toggle menu------------ -->
+        <script>
+            var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("text-info1");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 3500); // Change image every 2 seconds
+        }
+       
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+            window.addEventListener('load', function() {
+  setTimeout(function() {
+    document.querySelector('.overlay').style.display = 'none';
+    document.querySelector('.blur-content').style.filter = 'none';
+  }, 1000); // 3 seconds
+});
+// Add this JavaScript to your script section
+const payButton = document.getElementById("payButton");
+const paymentTable = document.getElementById("paymentTable");
+const confirmPayment = document.getElementById("confirmPayment");
+const closePaymentTable = document.getElementById("closePaymentTable");
+payButton.addEventListener("click", () => {
+    paymentTable.style.display = "block";
+});
+closePaymentTable.addEventListener("click", () => {
+    paymentTable.style.display = "none";
+});
+
+confirmPayment.addEventListener("click", () => {
+    // Here you can add code to handle the payment confirmation
+    // For example, you can collect the input values and process the payment.
+    alert("Payment confirmed!");
+});
+
+        </script>
+
+    </body>
+</html>

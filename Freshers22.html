@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery | Ajeenkya DY Patil</title>
+        <link rel="icon" href="images/clg.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="overlay">
+            <div class="loading-container1">
+              <div class="loading-spinner1"></div>
+              <p>Loading...</p>
+            </div>
+          </div>
+        <section class="sub-header sub-header-image-3 blur-content">
+            <nav>
+                <a href="index.html"><img src="images/clg.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT ACE</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html" onclick="openContactWindow(); return false;">CONTACT</a></li>
+                    </ul>
+                      <script src="script.js"></script>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>G A L L E R Y ‎ ‎ ‎ |‎ ‎ ‎  F R E S H E R S</h1>
+            <div class="full-img" id="fullImgBox">
+                <img src="images/clg.png" id="fullImg">
+                <span onclick="closeFullImg()">X</span>
+            </div>
+            <div class="img-gallery">
+                <img src="images/Freshers_22/f1.jpg" onclick="openFullImg(this.src)">
+                <img src="images/Freshers_22/f2.jpg" onclick="openFullImg(this.src)">
+                <img src="images/Freshers_22/f5.jpg" onclick="openFullImg(this.src)">
+                <img src="images/Freshers_22/f6.jpg" onclick="openFullImg(this.src)">
+                <img src="images/Freshers_22/f7.jpg" onclick="openFullImg(this.src)">
+                <img src="images/Freshers_22/f8.jpg" onclick="openFullImg(this.src)">
+                <img src="images/Freshers_22/f12.jpg" onclick="openFullImg(this.src)">
+                <img src="images/Freshers_22/f15.jpg" onclick="openFullImg(this.src)">
+                
+            </div>
+        </section>
+     
+           
+        <script>
+            var fullImgBox = document.getElementById("fullImgBox")
+            var fullImg = document.getElementById("fullImg")
+            function openFullImg(pic){
+                fullImgBox.style.display = "flex";
+                fullImg.src = pic;
+            }
+            function closeFullImg(){
+                fullImgBox.style.display = "none";
+            }
+            window.addEventListener('load', function() {
+  setTimeout(function() {
+    document.querySelector('.overlay').style.display = 'none';
+    document.querySelector('.blur-content').style.filter = 'none';
+  }, 1000); // 3 seconds
+});
+        </script>
+ 
+    </body>
+</html>
