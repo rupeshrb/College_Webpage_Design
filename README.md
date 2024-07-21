@@ -1,5 +1,6 @@
+[![Click for animation of open curtains](upload/11.png)](https://www.youtube.com/embed/bdHJsT3lG-4)
 
-    [![Click to watch the video](upload/11.png)](https://youtu.be/bdHJsT3lG-4)
+
 <div>
     <img src="upload/2.png" alt="2">
     <img src="upload/3.png" alt="3">
